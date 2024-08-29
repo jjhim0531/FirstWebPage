@@ -6,13 +6,58 @@
 h2 {
     font-size: 5rem;
 }
-
+#footer .choose{
+    color: white
+}
 
 .wrapper>header p {
-    font-size: 5rem;
+    font-size: 1.3rem;
     color: #302512;
 }
 
 #one .content p {
-    font-size: 40px
+    font-size: 25px
+}
+/* Flex 컨테이너 스타일 설정 */
+.flex-container {
+    display: flex;
+    align-items: stretch; /* 아이템의 높이를 동일하게 맞춤 */
+    gap: 20px; /* 아이템 사이 간격 조절 */
+   
+}
+
+.flex-item {
+    flex: 1; /* 모든 아이템이 동일한 너비를 가지도록 설정 */
+}
+
+.flex-item img, .flex-item video {
+    width: 100%; /* 부모 요소의 너비에 맞추기 */
+    height: 90%; /* 부모 요소의 높이에 맞추기 */
+    object-fit: cover; /* 이미지나 비디오가 왜곡되지 않도록 설정 */
+}
+
+.full-width-description {
+    width: 100%; /* 가로 전체를 차지 */
+    
+    text-align: center; /* 텍스트를 중앙 정렬 */
+    font-size: 1.5rem; /* 적당한 크기의 폰트 설정 */
+    color: #ffffff; /* 텍스트 색상을 하얀색으로 설정 */
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column; /* 작은 화면에서는 세로로 배치 */
+    }
+    .flex-item {
+        margin-bottom: 20px; /* 아이템 간격 조절 */
+    }
+}
+#phuket .full-width-description {
+    color: black;
+}
+#barcelona >header p{
+    color: white;
+}
+#Kyoto >header p{
+    color: white;
 }
